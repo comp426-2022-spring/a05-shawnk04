@@ -24,6 +24,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Serve static HTML files
+app.use(express.static('./public'));
+
 // Define allowed argument name 'port'.
 args['port'];
 
